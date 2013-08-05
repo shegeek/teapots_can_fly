@@ -46,6 +46,10 @@ Describe the parts of the mesh:
 Walk through the steps of the render function
 
 Show: demo again
+
+show: resources & urls slide
+
+NOTE: make links document to put in repo
     
 
 
