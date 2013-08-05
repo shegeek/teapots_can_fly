@@ -10,7 +10,7 @@ show: "at the end of this 12m talk, you will be able to reproduce this" -- demo
 
 ask: What's 3D animation like? Is it the same as 2D, or different?
 show: 2D graphics-draw frame directly--intuitive
-show: 3D graphics is like claymation; create a little world, make slight movements, snap pic of the frame
+show: 3D graphics is like claymation; create a diorama, make slight movements, snap pic of the frame
 
 tell: This is what we will do, except instead of using clay, we will use code.
 ask: What do we need?
@@ -24,7 +24,7 @@ create an index.html file, include script three.min.js,
     within it, create a THREE.WebGLRenderer and append it to the document body
 
 then, to answer the three orienting questions--where, what, how
-where: we're building a little world, a shadowbox--THREE.scene
+where: we're building a little world, a diorama--THREE.scene
     we need a wormhole into it--THREE.PerspectiveCamera
     ? Describe the significance of using a PerspectiveCamera
     show: overview slides with tree diagrams
