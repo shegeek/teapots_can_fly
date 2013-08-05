@@ -1,0 +1,19 @@
+
+show: intro slide
+
+ask: How important are graphics? <really important!!!>
+ask: Would you like to have game quality graphics that run on the user's gpu?
+    yes: Of course you would!
+    no: It's easier and more efficient than you think!
+
+ask: What's 3D animatin like? Is it the same as 2D, or different?
+show: 2D graphics-draw frame directly--intuitive
+show: 3D graphics is like claymation; create a little world, make slight movements, snap pic of the frame
+
+tell: This is what we will do, except instead of using clay, we will use code.
+ask: What do we need?
+tell: on the concrete level, we need: three.js, teapot.obj, usual web stuff (browser, web server, html file...)
+show: slides illustrating each, mention url slide at the end, make github repo for all
+tell: Now that we're done going shopping...on the conceptual level, we need:
+
+

@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Teapots Can Fly!</title>
+		<style>canvas { width: 100%; height: 100% }</style>
+	</head>
+	<body>
+		<script src="three.min.js"></script>
+		<script>
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera(35, 
+			    window.innerWidth/window.innerHeight, 0.1, 1000);
+
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+
+<!--			var geometry = new THREE.CubeGeometry(10,10,10);-->
+<!--			var material = new THREE.MeshPhongMaterial({color: 0x00ff00});-->
+<!--			var cube = new THREE.Mesh(geometry, material);-->
+<!--			scene.add(cube);-->
+			
+			var teapot;
+			var halfScreenWidth = 100;
+			var jsonLoader = new THREE.JSONLoader();
+            jsonLoader.load( "teapot.js", createTeapot);
+			
+		    function createTeapot(tGeometry){
+		    var tMaterial = new THREE.MeshPhongMaterial({color: 0x00ffff});
+		    var tMesh = new THREE.Mesh( tGeometry, tMaterial );
+		    tMesh.position.x = -halfScreenWidth;
+		    scene.add(tMesh);
+		    teapot = tMesh;
+		    }
+		
+         var light = new THREE.PointLight(0xffffff);
+         light.position.set(0,150,150);
+         scene.add(light);
+
+			camera.position.z = 50;
+
+			var render = function () {
+				requestAnimationFrame(render);
+				if (teapot) {
+
+<!--				cube.rotation.x += 0.05;-->
+<!--				cube.rotation.y += 0.05;-->
+
+				teapot.position.x += 0.1;
+				if (teapot.position.x > halfScreenWidth) 
+				    teapot.position.x = -halfScreenWidth;
+
+				renderer.render(scene, camera);
+				}
+			};
+
+			render();
+		</script>
+	</body>
+</html>
+
+<!-- teapot model from khronos.org https://www.khronos.org/registry/webgl/sdk/demos/webkit/resources/teapot.obj -->

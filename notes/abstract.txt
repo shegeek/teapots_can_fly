@@ -1,0 +1,40 @@
+
+
+It is now possible to create stunning 3D graphics that run directly in a web browser. Most web programmers, however, have never studied the high magical art of 3D graphics programming, and for good reasons. The good news is that they don't have to. Libraries, such as the popular three.js, make 3D graphics programming accessible to anyone with a few web programming and spatial orientation skills.
+
+
+
+
+
+web programmers
+game programmers
+scientists
+architects/designers
+presenters
+
+beginner-intermediate
+
+
+Web developers, game developers, architects, designers, engineers, scientists, and anyone who wants to make an impact with 3D graphics.
+
+This is an Intermediate level talk. Attendees should have a basic working knowledge of Javascript and HTML.
+
+ 
+
+Attendees will learn to create a simple animation with the three.js library.
+
+Attendees will gain an overview of what the three.js library does, how it is used, and how to create a simple animation with it.
+
+
+
+Kelley Nielsen is the sole developer of Android apps at Salticid Software, and the author of the Xtra Screen Hacks collection of screen savers for Linux. She has a B.S. in Computer Science from UCSC. 
+
+
+As a former "not visual" person who became fascinated with screen savers and logos, I know the joy of learning to see.. I also know the misconception of women as lacking in spatial reasoning skills, and I know first hand how unfair it is. Spatial reasoning is a skill to be learned, just like any other skill. Creating beautiful 3D images is a fun, empowering way to do it.  --> and if you already have those skills, this is a great way to show them off! ->enjoy using them!
+
+
+
+After this talk, you will be able to create a simple 3D animation that runs natively in the web browser. You will learn the basics of how 3D animation works, what three.js is and what it does, and how to bootstrap a simple three.js project.
+
+
+

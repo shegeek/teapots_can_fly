@@ -1,0 +1,3 @@
+Three.js documentation http://mrdoob.github.com/three.js/
+WebGL Up And Running, Tony Parisi, O'Reilly
+An Introduction to WebGL, Luz Caballero http://dev.opera.com/articles/view/an-introduction-to-webgl/ 

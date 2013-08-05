@@ -1,0 +1,5 @@
+#!/bin/bash
+# rls--run local server
+# point browser to http://localhost:8000
+
+python -m SimpleHTTPServer
