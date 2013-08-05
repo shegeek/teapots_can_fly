@@ -5,8 +5,10 @@ ask: How important are graphics? <really important!!!>
 ask: Would you like to have game quality graphics that run on the user's gpu?
     yes: Of course you would!
     no: It's easier and more efficient than you think!
+    
+show: "at the end of this 12m talk, you will be able to reproduce this" -- demo
 
-ask: What's 3D animatin like? Is it the same as 2D, or different?
+ask: What's 3D animation like? Is it the same as 2D, or different?
 show: 2D graphics-draw frame directly--intuitive
 show: 3D graphics is like claymation; create a little world, make slight movements, snap pic of the frame
 
@@ -15,5 +17,36 @@ ask: What do we need?
 tell: on the concrete level, we need: three.js, teapot.obj, usual web stuff (browser, web server, html file...)
 show: slides illustrating each, mention url slide at the end, make github repo for all
 tell: Now that we're done going shopping...on the conceptual level, we need:
+
+first, to get some basic housekeeping out of the way--
+create an index.html file, include script three.min.js,
+    include our own script, inline in this case
+    within it, create a THREE.WebGLRenderer and append it to the document body
+
+then, to answer the three orienting questions--where, what, how
+where: we're building a little world, a shadowbox--THREE.scene
+    we need a wormhole into it--THREE.PerspectiveCamera
+    ? Describe the significance of using a PerspectiveCamera
+    show: overview slides with tree diagrams
+What: we need to populate our shadowbox with objects--THREE.Mesh
+    also add a THREE.PointLight so that our world isn't enveloped in darkness
+How: create an animation loop using RequestAnimationFrame()
+    "a coupon for a frame--each time you redeem one, collect another"
+    Use affine transformations to move the meshes a little bit each frame
+    Transformations we will mainly use: translation, rotation, scaling
+
+Go over the three above points in detail, with code snippets on the slides
+Scene-- just instantiate one
+Camera--describe the four parameters
+Describe the parts of the mesh: 
+    THREE.Geometry (the bones) and THREE.Material (the skin, so it can be seen)
+    ? describe the difference between logical and visible constructs
+    ? mention the python obj to js converter
+    Discuss asynchronous loading of models and why the loader needs a callback
+Walk through the steps of the render function
+
+Show: demo again
+    
+
 
 
