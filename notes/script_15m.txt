@@ -12,18 +12,8 @@ ask: What's 3D animation like? Is it the same as 2D, or different?
 show: 2D graphics-draw frame directly--intuitive
 show: 3D graphics is like claymation; create a diorama, make slight movements, snap pic of the frame
 
-tell: This is what we will do, except instead of using clay, we will use code.
-ask: What do we need?
-tell: on the concrete level, we need: three.js, teapot.obj, usual web stuff (browser, web server, html file...)
-show: slides illustrating each, mention url slide at the end, make github repo for all
-tell: Now that we're done going shopping...on the conceptual level, we need:
-
-first, to get some basic housekeeping out of the way--
-create an index.html file, include script three.min.js,
-    include our own script, inline in this case
-    within it, create a THREE.WebGLRenderer and append it to the document body
-
-then, to answer the three orienting questions--where, what, how
+WE're in a little world all our own, so we'll answer
+ the three orienting questions--where, what, how
 where: we're building a little world, a diorama--THREE.scene
     we need a wormhole into it--THREE.PerspectiveCamera
     ? Describe the significance of using a PerspectiveCamera
@@ -34,6 +24,18 @@ How: create an animation loop using RequestAnimationFrame()
     "a coupon for a frame--each time you redeem one, collect another"
     Use affine transformations to move the meshes a little bit each frame
     Transformations we will mainly use: translation, rotation, scaling
+
+tell: This is what we will do, except instead of using clay, we will use code.
+ask: What do we need?
+tell: on the concrete level, we need: three.js, teapot.obj, usual web stuff (browser, web server, html file...)
+show: slides illustrating each, mention url slide at the end, make github repo for all
+tell: Now that we're done going shopping...
+
+first, to get some basic housekeeping out of the way--
+create an index.html file, include script three.min.js,
+    include our own script, inline in this case
+    within it, create a THREE.WebGLRenderer and append it to the document body
+
 
 Go over the three above points in detail, with code snippets on the slides
 Scene-- just instantiate one
