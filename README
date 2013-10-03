@@ -1,0 +1,13 @@
+This is the repo for the talk 
+"Teapots Can Fly: 3D Graphics for Web Programmers"
+by Kelley Nielsen kelleynnn@gmail.com
+It can be found at https://github.com/shegeek/teapots_can_fly
+
+To run the example, first clone the repo or unpack the zipball.
+Then, you should be running some type of web server.
+rls is a wrapper for the Python SimpleHTTPServer, so 
+if you're on a *nix system, you may find it helpful.
+Then, in your browser, navigate to http://localhost:8000.
+You should see a blue or cyan teapot, against a white background,
+moving from left to right over and over.
+

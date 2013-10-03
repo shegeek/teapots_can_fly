@@ -1,0 +1,19 @@
+three.js repo: https://github.com/mrdoob/three.js
+three.js home page: http://threejs.org/
+
+Stemkoski's examples: http://stemkoski.github.io/Three.js/index.html
+
+WebGL Up and Running (by Tony Parisi):
+http://shop.oreilly.com/product/0636920024729.do
+
+Learning Three.js blog: http://learningthreejs.com/
+
+three.js boilerplate builder:
+http://jeromeetienne.github.io/threejsboilerplatebuilder/
+
+An Introduction to Web GL: http://dev.opera.com/articles/view/an-introduction-to-webgl/
+
+Tutorials on the LearningWebGL blog:
+http://learningwebgl.com/blog/?page_id=1217
+
+WebGL 1.0 spec: http://www.khronos.org/webgl/
